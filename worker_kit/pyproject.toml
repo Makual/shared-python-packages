@@ -1,0 +1,18 @@
+[project]
+name = "worker_kit"
+description = "Modules for creating various task workers for any Knowledge Base App that work via RabbitMQ."
+requires-python = ">= 3.11"
+dynamic = ["dependencies", "version"]
+authors = [
+    { name = "saintech", email = "mail@saintech.ru" }
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"worker_kit" = ""
+
+[tool.setuptools.dynamic.dependencies]
+file = ["requirements.txt"]

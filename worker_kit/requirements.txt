@@ -1,0 +1,2 @@
+aio-pika~=9.4.2
+asyncpg~=0.30.0

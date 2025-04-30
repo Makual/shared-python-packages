@@ -1,0 +1,18 @@
+[project]
+name = "api_client"
+description = "A collection of API clients for easy task adding for a KB backend that work via RabbitMQ."
+requires-python = ">= 3.11"
+dynamic = ["dependencies", "version"]
+authors = [
+    { name = "saintech", email = "mail@saintech.ru" }
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"api_client" = ""
+
+[tool.setuptools.dynamic.dependencies]
+file = ["requirements.txt"]

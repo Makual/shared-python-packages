@@ -1,0 +1,18 @@
+[project]
+name = "documents"
+description = "A simple library for working with knowledge base documents stored in a Postgres DB."
+requires-python = ">= 3.11"
+dynamic = ["dependencies", "version"]
+authors = [
+    { name = "saintech", email = "mail@saintech.ru" }
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"documents" = ""
+
+[tool.setuptools.dynamic.dependencies]
+file = ["requirements.txt"]
